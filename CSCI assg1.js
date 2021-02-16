@@ -203,7 +203,7 @@ function saveComment(email, text, color) {
         // combine the original data with the new data
         data = str + newData(counter, email, text, color);
         // Update the data
-        fetch("Comments.txt", { method: "Put", body: data });
+        fetch("Comments.txt", { method: "PUT", body: data });
     }
     )
 
@@ -286,7 +286,7 @@ function saveBonus(bonus) {
         // combine the original data with the new data
         data = str + newData(counter, bonus);
         // Update the data
-        fetch("Bonus.txt", { method: "Put", body: data });
+        fetch("Bonus.txt", { method: "PUT", body: data });
     }
     )
 }
