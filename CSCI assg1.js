@@ -16,8 +16,8 @@ function Newhobby() {
     let node = document.createTextNode(hobby);
     li.appendChild(node);
 
-    let last = document.querySelector("#Hobbies").lastChild;
-    document.querySelector("#Hobbies").insertBefore(li, last);
+    let last = document.querySelector("#Hobbies ul").lastChild;
+    document.querySelector("#Hobbies ul").insertBefore(li, last);
 
 }
 function toggle(ele) {
@@ -298,8 +298,8 @@ async function ipAndLocation() {
     let data = await getlocation();
     //console.log(data);
 
-    let ip = data.geoplugin_request;
-    let location = data.geoplugin_city;
+    let ip = data.ip;
+    let location = data.city;
     let date = getUserTime();
     let broswer = checkBrowser();
     let device = isMobile();
@@ -343,7 +343,8 @@ async function getlocation() {
         let obj = undefined;
         let request = new XMLHttpRequest();
         // false means synchronous, true means asynchronous
-        request.open('GET', 'http://www.geoplugin.net/json.gp', true);
+        // can also use http://www.geoplugin.net/json.gp with ip=geoplugin_request and location=geoplugin_city
+        request.open('GET', 'https://ipapi.co/json/', true);
         //console.log("getting");
         request.onreadystatechange = function () {
             if (request.readyState == 4 && request.status == 200) {
