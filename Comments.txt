@@ -1,0 +1,4 @@
+{ "Comment1":{"email":"s@s.com","comments":"dfdf","color":"red"} 
+, "Comment2":{"email":"s@s.com","comments":"fu","color":"blue"} 
+, "Comment3":{"email":"erre@er.com","comments":"dfdf","color":"black"} 
+, "Comment4":{"email":"h@c.com","comments":"yre ugly\n","color":"blue"} }

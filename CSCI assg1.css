@@ -1,0 +1,72 @@
+/* h1 .background{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    background-image: url(CUHK.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: center;
+    opacity: 50%;
+    
+   
+} */
+
+header{
+    background-image: url(CUHK.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1{
+    /*font-family: 'Hanalei', cursive;*/
+    font-family: 'Permanent Marker', cursive;
+    color:red;
+    text-align: center;
+    font-size: 8em;
+    margin:0;
+    /*opacity:100%;*/
+}
+
+/*body{
+   background-image: url(Math.jpg);
+   background-repeat: no-repeat;
+   background-size: auto;
+   background-position: center;
+   
+}*/
+
+#Hobbies ul{
+    margin-bottom:0;
+}
+#Me p{
+    margin-bottom:0;
+}
+
+
+#Comments{
+    font-family: 'Dancing Script', cursive;
+}
+
+#comments{
+    margin:0;
+}
+#Features p{
+    margin:0;
+}
+footer p{
+    margin:0;
+}
+
+
+.bonus_information{
+    font-size: 50%;
+    text-align: right;
+    color: grey;
+    font-family: initial;
+}

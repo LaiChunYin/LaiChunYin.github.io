@@ -1,0 +1,5 @@
+{ Comment1{email123@gmail.com,commentshello world,coloryellow} 
+, Comment2{emailavc@f.com,commentsfuck,colorblue} 
+, Comment3{emailqq@f.com,commentsyre ugly,colorred} 
+, Comment4{emailtest@ga.com,commentstesting,colorblack} 
+, Comment5{emails@s.com,commentsNicen,coloryellow} }
