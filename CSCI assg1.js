@@ -300,6 +300,14 @@ async function ipAndLocation() {
 
     let ip = data.ip;
     let location = data.city;
+    if(ip===undefined || ip===null || ip=="")
+    {
+        ip="Could not detect";
+    }
+    if(location===undefined || location===null || location =="")
+    {
+        location="Could not detect";
+    }
     let date = getUserTime();
     let broswer = checkBrowser();
     let device = isMobile();
@@ -438,6 +446,11 @@ function isMobile() {
     let type = typeof (window.orientation);
     let mobile = ((navigator.userAgent.indexOf('IEMobile') !== -1) || type !== "undefined");
 
+    if(mobile===undefined || mobile==null)
+    {
+        console.log(mobile);
+        return "Could not detect device.";
+    }
     if (mobile) {
         return "From mobile device.";
     }
