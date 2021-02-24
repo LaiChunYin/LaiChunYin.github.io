@@ -54,8 +54,9 @@
                 <li class="nav-item"><a href="#CSCI2720" class="nav-link">Why taking CSCI2720</a></li>
                 <li class="nav-item"><a href="#Features" class="nav-link">Responsive Features</a></li>
                 <li class="nav-item"><a href="#comments" class="nav-link">Comments</a></li>
-                <li class="nav-item"><a href="#Special" id="SpecialLink" onclick="toggle('#Special')"
-                        class="nav-link text-danger">Special!!!</a></li>
+                <!--the id Special_1 in href does not exist below. It's just for making the <a> element act like a button instead of a hyperlink-->
+                <li class="nav-item"><a href="#Special_1" id="SpecialLink" onclick="toggle('#Special')"
+                    class="nav-link text-danger">Special!!!</a></li>
             </ul>
         </div>
     </nav>
@@ -72,27 +73,10 @@
             <span class="sr-only"></span>
         </div>
     </div>
-    <!-- <nav class="navbar navbar-expand-md navbar-light sticky-top p-1">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbox" aria-controls="navbox" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="navbar-collapse collapse show" id="navbox" >
-            <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item"><a class="nav-link" target="_self" href="#about">About <i class="far fa-id-badge" aria-hidden="true"></i><span class="s"></span></a></li>
-              <li class="nav-item"><a class="nav-link" target="_self" href="#teaching">Teaching <i class="fas fa-chalkboard" aria-hidden="true"></i></a></li>
-              <li class="nav-item"><a class="nav-link" target="_self" href="#projects">Projects <i class="fas fa-cogs" aria-hidden="true"></i></a></li>
-              <li class="nav-item"><a class="nav-link" target="_self" href="#research">Research <i class="fas fa-music" aria-hidden="true"></i></a></li>
-              <li class="nav-item"><a class="nav-link" target="_self" href="#contact">Contact <i class="fas fa-at" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>
-          
-        </div>
-      </nav> -->
 
-    <div class="d-flex flex-row justify-content-center flex-md-wrap align-content-center">
-        <section id="Me" class="p-2 col-sm col-7" style="background-color: rgb(230, 60, 38);">
+
+    <div class="row d-flex flex-row justify-content-center flex-md-wrap align-content-center">
+        <section id="Me" class="p-2 col-md-7 col-lg-4" style="background-color: rgb(230, 60, 38);">
             <h2>About Me</h2>
             <p class="font-italic">Hi! I am Lai Chun Yin (1155125168). A math major student minoring in spanish and
                 computer
@@ -100,7 +84,7 @@
                 created!</p>
         </section>
 
-        <section id="Hobbies" class="p-2  col-sm col-5" style="background-color: orange;">
+        <section id="Hobbies" class="p-2  col-md-5 col-lg-4" style="background-color: orange;">
             <h2>Hobbies</h2>
             <ul>
                 <li>Reading<i class="fa fa-book" aria-hidden="true"></i></li>
@@ -109,9 +93,9 @@
                 <li>Learning Languages<i class="fa fa-language" aria-hidden="true"></i></li>
             </ul>
         </section>
-    </div>
-    <div class="d-flex flex-row justify-content-center flex-md-wrap align-content-center">
-        <section id="Courses" class="p-2 col-sm col-4" style="background-color: gold">
+    <!-- </div>
+    <div class="row d-flex flex-row justify-content-center flex-md-wrap align-content-center"> -->
+        <section id="Courses" class="p-2 col-md-4 col-lg-4" style="background-color: gold">
             <h2>My courses</h2>
 
             <table class="table table-responsive table-hover">
@@ -147,31 +131,42 @@
             </table>
         </section>
 
-        <section id="CSCI2720" class="p-2 col col-8" style="background-color: yellowgreen;">
+        <section id="CSCI2720" class="p-2 col-md-8 col-lg-6" style="background-color: yellowgreen;">
             <div>
                 <h2>Why taking CSCI2720</h2>
-                <p>I am interested in learning knowledge related to web development. And most importantly, it is because
+                <p>     I am interested in learning knowledge related to web development. And most importantly, 
                     it is one of the required course of a computer science minor.</p>
             </div>
             <div>
                 <picture>
-                    <source srcset="Lecturer.jpg" media="(min-height: 500px)">
-                    <source srcset="Lecturer.jfif" media="(min-height: 300px)">
-                    <img class="rounded-circle" id="img1" src="Lecturer.jfif" width=50%>
+                    <source srcset="Lecturer.jpg" media="(min-width: 700px)">
+                    <source srcset="Lecturer.jfif">
+                    <img class="rounded-circle" id="img1" src="Lecturer.jpg" width=25%>
                 </picture>
-                <p>This is the lecturer of my course.</p>
+                <p style="text-align: center;">This is the lecturer of CSCI2720 and one of my most favorite lecturers!!!!.</p>
             </div>
         </section>
 
-    </div>
+    <!-- </div> -->
 
-    <section id="Features" style="background-color: aqua;">
+    <section id="Features" class="col-md-12 col-lg-6" style="background-color: aqua;">
         <h2>Responsive Features</h2>
-        <p>This website is built to fit devices of different sizes. Here are some examples. First, if you "squeeze" the
-            browser window, you will find that the items in navigation bar align in different ways. Second, the layout
-            will change according to the screen size. For example, if the screen is too small, all the sections will
-            align vertically.</p>
+        <p>This website is built to fit devices of different sizes, so that users can enjoy the website no matter what device they are using. Here are some concrete examples.</p>
+        <!-- <ol style="margin-bottom: 0;">
+            <li>The header background image resize automatically when the screen size changes.</li>
+            <li>Items in the navigation bar align vertically or horizontally depending on the screen width. </li>
+            <li>The layout will change according to the screen size. For example, if the screen is too small, all the sections will
+            align vertically. </li>
+            <li>The image in the section "Why taking CSCI2720" will change according to the screen width.</li>
+             -->
+             <div id="Examples" class="d-flex flex-wrap align-content-around justify-content-center">
+                <div class="p-3 m-2 bg-info" style="background-color: ;">The header background image resize automatically when the screen size changes.</div>
+                <div class="p-3 m-2 bg-info">Items in the navigation bar align vertically or horizontally depending on the screen width. </div>
+                <div class="p-3 m-2 bg-info">The layout will change according to the screen size. Large, medium and small screens have their own layout. </div>
+                <div class="p-3 m-2 bg-info">The image in the section "Why taking CSCI2720" will change according to the screen width.</div>
+                
     </section>
+</div>
 
     <div id="comments" class="container-fluid" style="background-color: beige;">
         <h2>Comments<i class="fa fa-comments" aria-hidden="true"></i></h2>
@@ -200,7 +195,7 @@
             <div class="mb-3">
                 <label for="new-email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="new-email" placeholder="name@example.com"
-                    pattern=".+@.+\.com" required>
+                    pattern=".+@.+\..+" required>
             </div>
             <div class="mb-3">
                 <label for="new-comment" class="form-label">Comment</label>
@@ -224,7 +219,7 @@
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="new-color" id="new-color-black" value="black">
-                <label class="form-check-label" for="new-color-black">Black</label>
+                <label class="form-check-label" for="new-color-black">Black (Default)</label>
             </div>
             <!-- TODO: Add more choices here with div/input/label -->
             <button type="button" class="btn btn-primary" onclick="processform();">Add comment</button>
