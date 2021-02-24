@@ -1,3 +1,5 @@
+/* Lai Chun Yin 1155125168*/
+
 /* h1 .background{
     position: absolute;
     z-index: -1;
@@ -21,6 +23,8 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    width:99.5vw;
 }
 
 header h1{
@@ -41,6 +45,12 @@ header h1{
    
 }*/
 
+/* #Special{
+    background-color: coral;
+    align-items: center;
+    
+} */
+
 #Hobbies ul{
     margin-bottom:0;
 }
@@ -55,6 +65,7 @@ header h1{
 
 #comments{
     margin:0;
+    width:99.5vw;
 }
 #Features p{
     margin:0;
@@ -69,4 +80,30 @@ footer p{
     text-align: right;
     color: grey;
     font-family: initial;
+}
+
+
+
+img{
+    position: relative;
+    left:35%;
+}
+
+section p{
+    padding:5px;
+}
+
+section h2{
+    padding:5px;
+}
+
+nav{
+    width:99.5vw;
+}
+footer{
+    width:99.5vw;
+}
+
+#Examples{
+    text-align: center;
 }
