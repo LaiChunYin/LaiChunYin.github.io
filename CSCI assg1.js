@@ -1,3 +1,6 @@
+// Lai Chun Yin 1155125168
+
+
 function shine() {
 
     setInterval(() => {
